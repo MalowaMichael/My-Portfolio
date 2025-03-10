@@ -1,12 +1,50 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! I'm Malowa, a passionate Software Engineering student who loves building interactive and responsive web applications. In this portfolio, I realize the thoughts implementation into reality as shown in the beauty about me in my portfolio.
 
-Currently, two official plugins are available:
+## Live Preview
+[View my portfolio]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tech Stack
+- **React**- Frontend framework; efficient project maintenance
+- **Tailwind CSS** - Utility-fast CSS framework; styling
+- **Vite** - Build tool; high performance
+- **GitHub Pages** - Deployment
 
-## Expanding the ESLint configuration
+# Features
+- **Responsive Design** - Optimized for all screen sizes
+- **Smooth Animations** - Engaging UI/UX
+- **Fast & Optimized** - Built with *Vite* for high performance
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Project Structure
+
+
+# Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MalowaMichael/My-Portfolio.git
+
+2. Navigate to the project folder:
+   ```bash
+   cd My-Portfolio
+
+3. Install dependencies:
+   ```bash
+   npm install
+
+4. Run the project locally:
+   ```bash
+   npm run dev
+
+# Deployment
+The portfolio is deployed using **GitHub Pages**. To deploy updates, run:
+```bash
+   npm run deploy
+```
+
+Feel free to explore, fork, and contribute! 🚀
+
+This README is structured to be informative, professional, and engaging.
+Let me know if you’d like any modifications!
+
+#### Happy Coding!
