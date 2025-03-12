@@ -12,7 +12,7 @@ import jsprojectImg from '../assets/javascript_project.jpg'
 //define the image mock data
 const projImages = [
   {indx: 0, theImg: pwayImg, link: "https://malowamichael.github.io/P-Way-Express/"},
-  {indx: 1, theImg: productImg},
+  {indx: 1, theImg: productImg, link: "https://malowamichael.github.io/Dynamic-Product-Routing-with-React/"},
   {indx: 2, theImg: sharingImg},
   {indx: 3, theImg: resumeImg},
   {indx: 4, theImg: jsprojectImg}
@@ -114,7 +114,7 @@ const AboutDisplay = () => {
               
               {projImages.map((image) =>{
                 //find the corresponding image name
-                const projectName = projNames.find((proj) => proj.id === image.indx)
+                const projectName = projNames.find((name) => name.id === image.indx)
 
                 return (
                     <div className='block cursor-pointer hover:shadow-lg hover:shadow-[#4ef0ff] hover:transition-all hover:ease-in-out hover:duration[0.7s]'>
@@ -123,7 +123,8 @@ const AboutDisplay = () => {
                           <img src = {image.theImg} alt = {`Image-${image.indx}`} 
                           className='h-[150px] w-[200px] mb-4 hover:transition-all hover:duration:[1s] hover:ease-in-out '
                           />
-                          <p className='relative w-max-content text-center text-white hover:text-[#1dff42] hover:transition-all hover:duration-[1s] hover:ease-in-out'>{projectName.name}</p>
+                          <p className='relative w-max-content text-center text-white hover:text-[#1dff42] 
+                          hover:transition-all hover:duration-[1s] hover:ease-in-out'>{projectName.name}</p>
                     </a>
 
                   </div>

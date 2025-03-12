@@ -16,7 +16,7 @@ const Navbar = () => {
           {/* Left Side */}
           <div className="flex items-center space-x-4">
             <img className="rounded-full w-10 h-10" src="" alt="" />
-            <div className="text-lg italic text-[#1dff42] font-semibold">The Melah</div>
+            <div className="text-lg italic text-[#1dff42] font-semibold">Dev Melah</div>
           </div>
 
           {/* Right Side - Nav Links */}
