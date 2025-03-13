@@ -30,7 +30,7 @@ const HomeDisplay = () => {
         </div>
         
         <div className="flex relative bg-transparent h-[0px] w-[80%] items-center justify-center translate-y-40 translate-x-30">
-          <img className='h-[300px] cursor-help absolute z-[30] rounded-tr-[75px] rounded-bl-[75px] origin-bottom-right hover:scale-105 hover:transition-all hover:duration-[1s] hover:ease-in-out  ' src={heroImg} alt="Hero Default" />
+          <img className='h-[300px] cursor-default absolute z-[30] rounded-tr-[75px] rounded-bl-[75px] origin-bottom-right hover:scale-105 hover:transition-all hover:duration-[1s] hover:ease-in-out  ' src={heroImg} alt="Hero Default" />
           <img onMouseOver={() => setIsHovered(!isHovered)} className= {`h-[300px] absolute ${isHovered? 'z-[10]':'z-[20]'}  ' rounded-tr-[75px] rounded-bl-[75px] origin-bottom-right hover:scale-105 hover:transition-all hover:duration-[1s] hover:ease-in-out  rotate-[15deg]`} src={heroImg} alt="Hero tilted-1" />
 
           <img onMouseOver={() => setIsHovered(!isHovered)} className={`h-[300px] absolute ${isHovered? 'z-[20]':'z-[10]'} rounded-tr-[75px] rounded-bl-[75px] origin-bottom-right hover:scale-105 hover:transition-all hover:duration-[1s] hover:ease-in-out  rotate-[30deg]`} src={heroImg} alt="Hero tilted-2" />
