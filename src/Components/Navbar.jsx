@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import {Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
 
-  const navItems = ["Home", "About", "Skills", "Contacts"];
-  const navPaths = ["/", "/about", "/skills", "/contacts"]
+  const navItems = ["Home", "About", "Works", "Contacts"];
+  const navSections = ["home", "about", "works", "contacts"]
   return (
     <div className="relative sticky top-0 z-[10]">
       {/* Gradient Background */}
@@ -16,20 +16,27 @@ const Navbar = () => {
           {/* Left Side */}
           <div className="flex items-center space-x-4">
             <img className="rounded-full w-10 h-10" src="" alt="" />
-            <div className="text-lg italic text-[#1dff42] font-semibold">Dev Melah</div>
+            <div className="text-lg italic text-[#1dff42] font-semibold font-mono">Dev Melah</div>
           </div>
 
           {/* Right Side - Nav Links */}
           <div>
-            <ul className="flex items-end gap-[15%] text-[#1dff42] text-lg italic justify-[space-between] w-lg">
+            <ul className="flex items-end gap-[15%] text-[#1dff42] text-lg font-mono justify-[space-between] w-lg">
               {navItems.map((item, index) => (
-                <Link key={item}  to = {navPaths[index]}>
                   <li
-                  className="relative cursor-pointer after:absolute after:w-0 after:h-[2px] after:left-0 after:bottom-[-5px] after:bg-[cyan] after:rounded-md after:transition-all after:duration-300 hover:after:w-full hover:text-[cyan]"
+                  key={index}
                 >
-                  {item}
+                  <ScrollLink
+                  to={navSections[index]} 
+                  smooth={true} 
+                  duration={500} 
+                  offset={-50} // Adjusts scrolling position
+                  className="relative cursor-pointer after:absolute after:w-0 after:h-[2px] after:left-0 after:bottom-[-5px] after:bg-[cyan] after:rounded-md after:transition-all after:duration-300 hover:after:w-full hover:text-[cyan]"
+
+                  >
+                    {item}
+                  </ScrollLink>
                 </li>
-                </Link>
               ))}
             </ul>
           </div>

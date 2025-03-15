@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
-/* Hero section */
-
-
-/* Hero section */
-
+body{
+  background: #1f1e1e;
+  color: #f3f4f6;
+}
