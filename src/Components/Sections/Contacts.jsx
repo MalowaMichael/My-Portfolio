@@ -18,21 +18,19 @@ const Contacts = () => {
   //const letConnect = socialMedia.filter(media => media.type==='connect')
   
   return (
-    <section id="contacts" className='min-h-screen w-[90%] m-auto mb-[5%]'>
+    <section id="contacts" className='border-none p-1 min-h-screen md:w-[90%] m-auto mb-[5%] mt-[100%] sm:mt-[60%] lg:mt-[10%]'>
       
       <motion.div
         initial={{opacity:0, y:150}}
         whileInView={{opacity:1, y:0}}
         transition={{duration:0.8, easings:"easeout"}}
-        className=''
+        className='w-full border-none'
       >
-        <div id= "screen-saver" className='w-[60%] m-auto text-white p-4 text-center font-[Gill Sans, Gill Sans MT, Calibri, Trebuchet MS]'>
-          <p className='md:text-5xl antialiased font-[calibri] font-semibold text-center my-4 bg-gradient-to-r from-[#1dff42] to-black bg-clip-text text-transparent '>Let's Talk</p>
-          <p className='bg-gradient-from-tl bg-gradient-to-br from-[#1dff42] to-cyan-700 bg-clip-text text-transparent'>I understand your purpose for visiting my portfolio. Let's get in touch.<br/>
-          Together,  we build something bigger.</p>
-      </div>
+        <p className='text-2xl md:text-5xl antialiased font-[calibri] font-semibold text-center my-4 bg-gradient-to-r from-[#1dff42] to-black bg-clip-text text-transparent '>Let's Talk</p>
+        <p className='text-center bg-gradient-from-tl bg-gradient-to-br from-[#1dff42] to-cyan-700 bg-clip-text text-transparent'>I understand your purpose for visiting my portfolio. Let's get in touch.<br/>
+        Together,  we build something bigger.</p>
 
-      <div id="contacts-container" className='w-[30%] border border-white/10 m-auto mt-[2%] bg-transparent border border-white/10 rounded-md  '>
+      <div id="contacts-container" className='sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[50%] 2xl:w-[60%] border border-white/10 m-auto mt-[10%] md:mt-[2%] bg-transparent border border-white/10 rounded-md  '>
         
         <div id='quick-contacts' className='block border-none'>
            <p className='text-[cyan] text-center font-medium text-[18px] '>Quick Connections</p>
@@ -64,12 +62,12 @@ const Contacts = () => {
         {/**Contact Form */}
         <div className='border-none p-2'>
           <form className='flex flex-col items-center gap-5 '>
-            <input className='text-md focus:border-cyan-700 focus:bg-aqua/5 border border-white/15 rounded-md outline-none w-[90%] m-auto p-3 ' type = "text" name = "name" placeholder='your name'/>
-            <input className='text-md focus:border-cyan-700 focus:bg-aqua/5 border border-white/15 rounded-md outline-none w-[90%] m-auto p-3 ' type = "email" name = "email" placeholder='example@gmail.com'/>
+            <input className='text-md focus:border-cyan-700 focus:bg-aqua/5 border border-white/15 rounded-sm md:rounded-md outline-none w-[96%] md:w-[90%] m-auto p-2 md:p-3 ' type = "text" name = "name" placeholder='your name'/>
+            <input className='text-md focus:border-cyan-700 focus:bg-aqua/5 border border-white/15 rounded-sm md:rounded-md outline-none w-[96%] md:w-[90%] m-auto p-2 md:p-3 ' type = "email" name = "email" placeholder='example@gmail.com'/>
 
-            <textarea className='focus:border-cyan-700 focus:bg-aqua/5 w-[90%] m-auto border border-white/10 rounded-md outline-none px-2' rows="5" cols="30" placeholder='your comments...'></textarea>
+            <textarea className='focus:border-cyan-700 focus:bg-aqua/5 w-[96%] md:w-[90%] m-auto border border-white/10 rounded-md outline-none px-2' rows="5" cols="30" placeholder='your comments...'></textarea>
           
-              <input className='text-white bg-[aqua]/25 text-lg text-center p-2 w-[70%] m-auto rounded-md hover:rounded-none cursor-pointer  ' type="submit" onClick={() => alert("Please use the quick connections for now.")} value="Send"/>
+              <input className='text-white bg-[aqua]/25 sm:text-lg text-center p-2 w-[80%] sm:w-[70%] m-auto md:mb-[2%] rounded-md hover:rounded-none cursor-pointer  ' type="submit" onClick={() => alert("Please use the quick connections for now.")} value="Send"/>
           </form>
         </div>
 

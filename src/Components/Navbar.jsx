@@ -6,7 +6,7 @@ const Navbar = () => {
   const navItems = ["Home", "About", "Works", "Contacts"];
   const navSections = ["home", "about", "works", "contacts"]
   return (
-    <div className="relative sticky top-0 z-[10]">
+    <div className="relative sticky top-0 z-[10] w-[100%]">
       {/* Gradient Background */}
       <div className="pb-[1px] bg-gradient-to-r from-[#1dff42] to-[rgb(69, 69, 69)] w-full">
       
@@ -15,12 +15,15 @@ const Navbar = () => {
           
           {/* Left Side */}
           <div className="flex items-center space-x-4">
-            <img className="rounded-full w-10 h-10" src="" alt="" />
-            <div className="text-lg italic text-[#1dff42] font-semibold font-mono">Dev Melah</div>
+            <img className="rounded-full h-5 w-5 md:w-10 md:h-10" src="" alt="" />
+            <div className="md:text-lg italic text-[#1dff42] md:font-semibold font-mono">Dev Melah</div>
           </div>
 
+          <div className='text-[20px] md:hidden'>
+            &#9776;
+          </div>
           {/* Right Side - Nav Links */}
-          <div>
+          <div className='hidden md:block'>
             <ul className="flex items-end gap-[15%] text-[#1dff42] text-lg font-mono justify-[space-between] w-lg">
               {navItems.map((item, index) => (
                   <li

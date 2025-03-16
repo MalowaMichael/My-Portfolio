@@ -14,7 +14,8 @@ const projImages = [
   {indx: 1, theImg: productImg, link: "https://malowamichael.github.io/Dynamic-Product-Routing-with-React/"},
   {indx: 2, theImg: sharingImg},
   {indx: 3, theImg: resumeImg},
-  {indx: 4, theImg: jsprojectImg}
+  {indx: 4, theImg: jsprojectImg},
+
 ]
 
 const projNames = [
@@ -28,33 +29,33 @@ const projNames = [
 const Works = () => {
   return (
     <section id="works"
-    className='min-h-screen w-[90%] m-auto my-[5%]'
+    className='border-none p-1 min-h-screen h-full w-[90%] m-auto my-[5%]'
     >
       <motion.div
       initial={{opacity:0, y:150}}
       whileInView={{opacity:1, y:0}}
       transition={{duration:0.8}}
-      className=' m-auto w-full h-[400px]'
+      className=' m-auto w-full h-screen border-none border-blue-500 md:mt-[10%]'
       >
           {/**My projects section */}
-          <p className='md:text-4xl antialiased font-[calibri] font-semibold text-center my-4 bg-gradient-to-r from-[#1dff42] to-cyan-500 bg-clip-text text-transparent '>My Projects</p>
+          <p className='text-2xl md:text-4xl antialiased font-[calibri] font-semibold text-center my-4 bg-gradient-to-r from-[#1dff42] to-cyan-500 bg-clip-text text-transparent '>My Projects</p>
 
-            <div className='flex p-4 justify-between h-[300px] w-full bg-  '>
+            <div className='border-none border-yellow-700 sm:flex sm:flex-wrap sm:gap-[1%] p-1 justify-between lg:items-start  lg:gap-x-[0.5%] h-full md:h-[600px] w-full  '>
               
               {projImages.map((image, index) =>{
                 //find the corresponding image name
                 const projectName = projNames.find((name) => name.id === image.indx)
 
                 return (
-                    <div key={index} className='block cursor-pointer hover:shadow-md hover:shadow-[#4ef0ff] hover:transition-all hover:ease-in-out hover:duration[0.7s]'>
+                    <div key={index} className='border border-white/10 w-[70%] h-[50%] sm:w-[40%] md:w-[30%] lg:w-[20%] lg:mt-[0] lg:ml-[0]  m-auto rounded-sm sm:rounded-xs mb-4 cursor-pointer hover:shadow-md hover:shadow-[#4ef0ff] hover:transition-all hover:ease-in-out hover:duration[0.7s]'>
                       <a href={image.link} target='_blank' rel='noopener noreferrer'>
 
                           <img src = {image.theImg} alt = {`Image-${image.indx}`} 
-                          className='h-[150px] w-[200px] mb-4 hover:transition-all hover:duration:[1s] hover:ease-in-out '
+                          className='object-cover md:h-[150px] md:w-full md:m-auto mb-4 hover:transition-all hover:duration:[1s] hover:ease-in-out '
                           onClick={() => alert("You are just about to leave this site!")}
                           
                           />
-                          <p className='relative w-max-content text-center bg-gradient-to-r from-[#1dff42] to-cyan-500 bg-clip-text text-transparent hover:text-[#1dff42] 
+                          <p className='relative mt-[20%] lg:mt-[30%] lg:font-medium sm:mt-0 w-max-content text-center font-medium md:font-normal bg-gradient-to-r from-[#1dff42] to-cyan-500 bg-clip-text text-transparent hover:text-[#1dff42] 
                           hover:transition-all hover:duration-[1s] hover:ease-in-out'>{projectName.name}</p>
                     </a>
 
