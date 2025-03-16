@@ -26,10 +26,10 @@ function App() {
       style={{
         scaleX : scrollYProgress,
         position : "fixed",
-        top:45,
+        top:20,
         left:0,
         right:0,
-        height:"40px",
+        height:"50px",
         originX:0,
         backgroundColor
       }}

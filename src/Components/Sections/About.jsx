@@ -74,19 +74,21 @@ const About = () => {
         </div>
 
         {/**Who I am section */}
-        <div className='border-none border-cyan-500 lg:flex lg:justify-between lg:gap-4 lg:items-end md:p-1 mt-[10%] md:mt-[5%]'>
+        <div className='border-none border-cyan-500 lg:flex lg:justify-between lg:gap-2 lg:items-end md:p-1 mt-[10%] md:mt-[5%]'>
                   
             
-            <div className='border-none'>
+            <div className='border-none lg:w-[80%]'>
             <div className='text-2xl font-medium py-1 text-center'>Front-end</div>
 
             <div id="front-end" className='flex items-center justify-center rounded-md gap-2 flex-wrap border border-white/10  p-1 '>
                 
                 {[...Array(20)].map((_, index) =>(
                   <div key={index} 
-                  onMouseOver={() =>setHoveredIndex(index)}
-                  onMouseOut={() =>setHoveredIndex(null)}
-                  style={{border: hoveredIndex === index?"none":"", boxShadow: hoveredIndex === index ? `0px 2px 5px ${frontLangs[index]?.color} `:"none"}} 
+                  //onMouseOver={() =>setHoveredIndex(index)}
+                  //onMouseOut={() =>setHoveredIndex(null)}
+                  //style={{border: hoveredIndex === index?"none":"", boxShadow: hoveredIndex === index ? `0px 2px 5px ${frontLangs[index]?.color} `:"none"}} 
+                  style={{boxShadow: `0px 2px 5px ${frontLangs[index]?.color}`}} 
+
                   
                   className='border rounded-md border-white/10 p-5 h-[80px] w-[80px] hover:border-[#1dff42]'>
                     {frontLangs[index] ? (
@@ -99,7 +101,7 @@ const About = () => {
 
             
             {/**Right section */}
-            <div className='mt-[5%] md:mt-[5%] border-none lg:w-[]'>
+            <div className='mt-[5%] md:mt-[5%] border-none lg:w-[70%]'>
             <div className='text-2xl font-medium py-1 text-center'>Back-end</div>
 
             <div id="backend" className='flex items-center justify-center rounded-md gap-2 flex-wrap border border-white/10 p-2 '>

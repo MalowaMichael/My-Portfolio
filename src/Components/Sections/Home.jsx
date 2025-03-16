@@ -20,7 +20,7 @@ const Home = () => {
   return (
         <section 
         id="home"
-        className=' h-[100vh] relative border-none mt-[10%] m-auto w-[96%] md:min-h-screen md:w-[90%] '
+        className='h-[90vh] md:h-[100vh] relative border-none mt-[10%] m-auto w-[96%] md:min-h-screen md:w-[90%] '
         >
       <div            
             className="mb-[10%] py-2 border-[none] p-4 accent-[#1dff42] bg-gradient-from-tl bg-transparent w-full h-[350px]"
@@ -50,8 +50,8 @@ const Home = () => {
         </div> 
 
         {/**Connections */}
-        <div className='block border-none w-[50%] m-auto mt-[4%] text-center p-1'>
-          <p className='text-xs w-full md:text-2xl font-bold md:font-medium md:leading-10 bg-gradient-to-r from-[#1dff42] to-cyan-400 bg-clip-text text-transparent'>Get connected...</p>
+        <div className='block border-none md:w-[50%] m-auto mt-[8%] md:mt-[4%] text-center p-1'>
+          <p className='text-2xl w-full md:text-3xl font-bold md:font-medium md:leading-10 bg-gradient-to-r from-[#1dff42] to-cyan-400 bg-clip-text text-transparent'>Get connected...</p>
           <div className='flex items-center justify-center gap-3 md:gap-6 my-2'>
             {socialMedia.map((media) =>(
               <a key={media.indx} href={media.link} rel='noopener noreferrer' target='_blank'>
