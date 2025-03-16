@@ -52,11 +52,11 @@ const Home = () => {
         {/**Connections */}
         <div className='block border-none md:w-[50%] m-auto mt-[8%] md:mt-[4%] text-center p-1'>
           <p className='text-2xl w-full md:text-3xl font-bold md:font-medium md:leading-10 bg-gradient-to-r from-[#1dff42] to-cyan-400 bg-clip-text text-transparent'>Get connected...</p>
-          <div className='flex items-center justify-center gap-3 md:gap-6 my-2'>
+          <div className='flex items-center justify-center gap-8 md:gap-6 mt-5'>
             {socialMedia.map((media) =>(
               <a key={media.indx} href={media.link} rel='noopener noreferrer' target='_blank'>
                   
-                  <img  src={media.account} alt={`Connection media ${media.indx}`} className='w-6 h-6 md:w-8 md:h-8 rounded-full hover:shadow-[0px_0px_5px_5px_#1dff42] hover:transition-all hover:ease-in-out '/>
+                  <img  src={media.account} alt={`Connection media ${media.indx}`} className='w-10 h-10 md:w-8 md:h-8 rounded-full hover:shadow-[0px_0px_5px_5px_#1dff42] hover:transition-all hover:ease-in-out '/>
 
               </a>
             ))}
