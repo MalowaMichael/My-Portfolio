@@ -38,7 +38,13 @@ const Navbar = () => {
           {/* Left Side */}
           <div className=" border-none flex items-center space-x-4 md:w-[40%]">
             <img className="rounded-full h-5 w-5 md:w-10 md:h-10" src="" alt="" />
-            <div className="md:text-lg italic text-[#1dff42] md:font-semibold font-mono">Dev Melah</div>
+
+              <a href='#home'>
+              <div className="md:text-lg italic text-[#1dff42] md:font-semibold font-mono">Dev Melah</div>
+
+              </a>
+            
+
           </div>
 
           <div className='text-[20px] border-none p-2 w-[8%] md:hidden' >
@@ -51,7 +57,6 @@ const Navbar = () => {
               {navItems.map((item, index) => (
                   <li
                   key={index}
-                  onClick={handleLinkClick}
                 >
                   <ScrollLink
                   to={navSections[index]} 
@@ -59,6 +64,7 @@ const Navbar = () => {
                   duration={500} 
                   offset={-50} // Adjusts scrolling position
                   className="relative cursor-pointer after:absolute after:w-0 after:h-[2px] after:left-0 after:bottom-[-5px] after:bg-[cyan] after:rounded-md after:transition-all after:duration-300 hover:after:w-full hover:text-[cyan]"
+                  onClick={handleLinkClick}
 
                   >
                     {item}

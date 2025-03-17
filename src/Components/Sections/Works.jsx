@@ -21,9 +21,9 @@ const projImages = [
 const projNames = [
   {id:0, name:"P`Way E-commerce"},
   {id:1, name:"Product Routing"  },
-  {id:2, name:"Image Sharing App/soon"  },
-  {id:3, name:"React Resume Builder/soon"  },
-  {id:4, name:"JavaScript Projects/soon"}
+  {id:2, name:"Image Sharing App"  },
+  {id:3, name:"React Resume Builder"  },
+  {id:4, name:"JavaScript Projects"}
 ]
 
 const Works = () => {

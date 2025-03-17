@@ -62,8 +62,8 @@ const Contacts = () => {
         {/**Contact Form */}
         <div className='border-none p-2'>
           <form className='flex flex-col items-center gap-5 '>
-            <input className='text-md focus:border-cyan-700 focus:bg-aqua/5 border border-white/15 rounded-sm md:rounded-md outline-none w-[96%] md:w-[90%] m-auto p-2 md:p-3 ' type = "text" name = "name" placeholder='your name'/>
-            <input className='text-md focus:border-cyan-700 focus:bg-aqua/5 border border-white/15 rounded-sm md:rounded-md outline-none w-[96%] md:w-[90%] m-auto p-2 md:p-3 ' type = "email" name = "email" placeholder='example@gmail.com'/>
+            <input className='text-md focus:border-cyan-700 focus:bg-aqua/5 border border-white/15 rounded-sm md:rounded-md outline-none w-[96%] md:w-[90%] m-auto p-3 md:p-3 ' type = "text" name = "name" placeholder='your name'/>
+            <input className='text-md focus:border-cyan-700 focus:bg-aqua/5 border border-white/15 rounded-sm md:rounded-md outline-none w-[96%] md:w-[90%] m-auto p-3 md:p-3 ' type = "email" name = "email" placeholder='example@gmail.com'/>
 
             <textarea className='focus:border-cyan-700 focus:bg-aqua/5 w-[96%] md:w-[90%] m-auto border border-white/10 rounded-md outline-none px-2' rows="5" cols="30" placeholder='your comments...'></textarea>
           
