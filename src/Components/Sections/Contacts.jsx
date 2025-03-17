@@ -18,7 +18,7 @@ const Contacts = () => {
   //const letConnect = socialMedia.filter(media => media.type==='connect')
   
   return (
-    <section id="contacts" className='border-none p-1 min-h-screen md:w-[90%] m-auto mb-[5%] mt-[150%] sm:mt-[60%] lg:mt-[10%]'>
+    <section id="contacts" className='border-none p-1 min-h-screen md:w-[90%] m-auto mb-[5%] mt-[50%] sm:mt-[60%] lg:mt-[10%]'>
       
       <motion.div
         initial={{opacity:0, y:150}}

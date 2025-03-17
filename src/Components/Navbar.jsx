@@ -33,10 +33,10 @@ const Navbar = () => {
       <div className="pb-[1px] bg-gradient-to-r from-[#1dff42] to-[rgb(69, 69, 69)] w-full">
       
         {/* Navbar Container */}
-        <div className=" left-0 w-full bg-[#454545] flex items-center justify-between p-4 shadow-md z-50">
+        <div className=" left-0 w-screen bg-[#454545] flex items-center justify-between p-4 shadow-md z-50">
           
           {/* Left Side */}
-          <div className="flex items-center space-x-4">
+          <div className=" border-none flex items-center space-x-4 md:w-[40%]">
             <img className="rounded-full h-5 w-5 md:w-10 md:h-10" src="" alt="" />
             <div className="md:text-lg italic text-[#1dff42] md:font-semibold font-mono">Dev Melah</div>
           </div>
@@ -46,8 +46,8 @@ const Navbar = () => {
           </div>
           
           {/* Right Side - Nav Links */}
-          <div className={`${menuOpen ? "block":"hidden"} absolute md:block z-[1000] bg-white/35 left-0 right-0 top-[100%] h-screen w-[100%] m-auto`}>
-            <ul className=" leading-20 text-center bg-white/95 text-black text-2xl md:flex md:items-end md:gap-[15%] text-[#1dff42] md:text-lg font-mono md:justify-between md:w-lg">
+          <div className={`${menuOpen ? "block":"hidden"} border-none absolute w-[96%] m-auto z-[1000] bg-white/35 left-0 right-0 top-[100%] h-screen md:left-[45%] md:w-[55%] md:block md:z-[50] md:bg-transparent md:h-[70px] md:top-0 `}>
+            <ul className=" leading-20 text-center bg-white/95 md:bg-[#454545] border-none md:top-[50%] text-black text-2xl font-mono md:leading-0 md:text-[#1dff42] md:w-[100%] md:p-8 md:flex md:items-start md:justify-between md:gap-[5%] md:text-lg">
               {navItems.map((item, index) => (
                   <li
                   key={index}

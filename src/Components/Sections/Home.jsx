@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 //import heroImg from '../../assets/hero.jpg'
-import { motion } from 'framer-motion'
 
 import linkedinImg from '../../assets/linkedin_logo.png'
 import githubImg from '../../assets/github_logo.png'
-import { easeIn } from 'motion'
 
 
 
@@ -14,7 +12,6 @@ const socialMedia = [
 ]
 
 const Home = () => {
-  const [isHovered, setIsHovered] = useState(false)
 
   
   return (
@@ -33,19 +30,20 @@ const Home = () => {
 
           <p className='leading-5 md:py-2 md:leading-8 line-clamp-4 text-normal text-white text-center font-light '>I'm motivated and passionate about crafting solution based applications that offer exceptional performance and seamless user interactivity.</p>
           
-          <a href='#works' >
-              <button className='relative my-3 md:mx-2 md:my-4 md:p-[8px] border border-[#1dff42] cursor-pointer rounded-xs md:rounded-sm text-white md:font-medium text-md md:text-lg w-full md:w-[40%] after:content-[""] after:absolute after:w-[12px] after:h-[5px] after:top-[-2px] after:left-0 after:bg-[cyan] after:transform after:translate-x-35 before:absolute before:right-0 before:bottom-[-2px] before:bg-[#1dff42] before:w-[12px] before:h-[5px] before:transform before:-translate-x-35 
-                hover:before:-translate-x-0 hover:before:transition-all hover:before:duration-[1s] hover:before:ease-in-out hover:rounded-[0] hover:after:-translate-x-0 hover:after:transition-all hover:after:duration-[1s] hover:after:ease-in-out 
-                hover:transition-all hover:duration-[0.7s] hover:ease-in-out hover:text-antialiased hover:text-transition-all hover:text-accent-cyan-500 '><span className='hover:text-[#1dff42] antialiased hover:transition-all hover:duration-[1s] hover:ease-in-out'>See </span> <span className='hover:text-[cyan] antialiased hover:transition-all hover-duration-[1s] hover:ease-in-out'>projects</span>
-                </button>
+        <div id="buttons" className='border-none flex justify-center space-x-4 mt-4'>
+          <a href='#works' 
+             className=' py-2 w-[50%] md:max-w-[30%] border border-[#1dff42] cursor-pointer rounded-xs md:rounded-sm text-white md:font-medium text-md md:text-lg w-full md:w-[40%] hover:text-[#1dff42]
+                '>
+                  See projects
               </a>
 
-              <a href='#contacts'>
-              <button className='relative md:mx-2 md:my-4 md:p-[8px] border border-[#1dff42] cursor-pointer rounded-xs md:rounded-sm text-white md:font-medium text-md md:text-lg w-full md:w-[40%] after:absolute after:w-[12px] after:h-[5px] after:top-[-3px] after:left-0 after:bg-[cyan] after:transform after:translate-x-0 before:absolute before:content[""] before:right-0 before:bottom-[-2px] before:bg-[#1dff42] before:w-[12px] before:h-[5px] before:transform before:translate-x-0 
-                hover:before:-translate-x-35 hover:before:transition-all hover:before:duration-[1s] hover:before:ease-in-out hover:rounded-[0] hover:after:translate-x-35 hover:after:transition-all hover:after:duration-[1s] hover:after:ease-in-out 
-                hover:transition-all hover:duration-[0.7s] hover:ease-in-out hover:text-antialiased hover:text-transition-all hover:text-accent-cyan-500 '><span className='hover:text-[#1dff42] antialiased hover:transition-all hover:duration-[1s] hover:ease-in-out'>Reach</span> <span className='hover:text-[cyan] antialiased hover:transition-all hover-duration-[1s] hover:ease-in-out'>me</span>
-                </button>
+              <a href='#contacts'
+               className='py-2 w-[50%] md:max-w-[30%] md:p-[8px] border border-[#1dff42] cursor-pointer rounded-xs md:rounded-sm text-white md:font-medium text-md md:text-lg w-full md:w-[40%] hover:text-[#1dff42] 
+                '>
+                  Reach me
+                
               </a>
+          </div>
         
         </div> 
 
