@@ -54,7 +54,7 @@ const About = () => {
             <p className='text-white pb-2   '><span className='md:text-lg font-medium'>Relevant Coursework Captured: </span> <span className='text-sm font-mono md:text-md'>SDLC, Data Structures, Web development...</span></p>
               
 
-              <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
+              <a href='https://drive.google.com/file/d/1caMsnJ6_G-DxAtyLP2PlAvU4-Jl0CEQY/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
               <button className='relative mt-[5%] md:mt-8 p-[8px] border border-[#1dff42] cursor-pointer rounded-xs md:rounded-sm text-white font-medium md:text-lg w-full md:w-[40%] after:content-[""] after:absolute after:w-[12px] after:h-[5px] after:top-[-3px] after:left-0 after:bg-[cyan] after:transform after:translate-x-0 before:absolute before:content[""] before:right-0 before:bottom-[-3px] before:bg-[#1dff42] before:w-[12px] before:h-[5px] before:transform before:translate-x-0 
                 hover:before:-translate-x-40 hover:before:transition-all hover:before:duration-[1s] hover:before:ease-in-out hover:rounded-[0] hover:after:translate-x-40 hover:after:transition-all hover:after:duration-[1s] hover:after:ease-in-out 
                 hover:transition-all hover:duration-[0.7s] hover:ease-in-out hover:text-antialiased hover:text-transition-all hover:text-accent-cyan-500 '><span className='hover:text-[#1dff42] antialiased hover:transition-all hover:duration-[1s] hover:ease-in-out'>Read</span> <span className='hover:text-[cyan] antialiased hover:transition-all hover-duration-[1s] hover:ease-in-out'>resume</span>
