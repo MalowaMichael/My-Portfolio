@@ -4,11 +4,12 @@ import { motion } from "motion/react"
 
 import whatsappImg from '../../assets/whatsapp_logo.png'
 import mailImg from '../../assets/mail_logo.png'
-
+import phoneImg from '../../assets/callme.png'
 
 const reachMe = [
-  {indx:0, account: mailImg, type:"socialize", link: "mailto:plmalowa27@outlook.com"},
-  {indx:1, account: whatsappImg, type:"socialize", link: "https://wa.me/254784192800?text=Hey%Paul!"}
+  {indx:0, account: phoneImg, type: "socialize", link: "tel: +254784192800"},
+  {indx:1, account: mailImg, type:"socialize", link: "mailto:plmalowa27@outlook.com"},
+  {indx:2, account: whatsappImg, type:"socialize", link: "https://wa.me/254784192800?text=Hey%Paul!"},
 ]
 
 
