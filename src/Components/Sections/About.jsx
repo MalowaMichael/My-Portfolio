@@ -46,12 +46,12 @@ const About = () => {
         <div id="education" className='border-none border-green-500  p-2 md:p-4 sm:flex sm:justify-between sm:gap-[1%] md:h-[300px] w-full bg-transparent mt-[10%] md:mt-[0%]  '>
           
           {/**Left section */}
-          <div id="left" className="border px-4 w-full md:w-[60%] border-white/10 py-4 rounded-md hover:border-[#1dff42] hover:translate-y-[-8px] hover:transition-all hover:ease-in-out">
+          <div id="left" className="bg-white/1 border px-4 w-full md:w-[60%] border-white/10 py-4 rounded-md hover:transition-all hover:ease-in-out">
             <p className='text-left md:text-2xl font-bold'>Education</p>
-            <p className=" text-white font-mono text-sm md:text-md pb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right  ">Currently a student at Kirinyaga University. Pursuing Bsc in Software Engineering.</p>
+            <p className=" text-white font-[popins] text-sm md:text-md pb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right  ">Currently a student at Kirinyaga University. Pursuing Bsc in Software Engineering.</p>
 
             <div className="block">
-            <p className='text-white pb-2   '><span className='md:text-lg font-medium'>Relevant Coursework Captured: </span> <span className='text-sm font-mono md:text-md'>SDLC, Data Structures, Web development...</span></p>
+            <p className='text-white pb-2   '><span className='md:text-lg font-[poppins] font-medium'>Relevant Coursework Captured: </span> <span className='text-sm font-[poppins] md:text-md'>SDLC, Data Structures, Web development...</span></p>
               
 
               <a href='https://drive.google.com/file/d/1caMsnJ6_G-DxAtyLP2PlAvU4-Jl0CEQY/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
@@ -80,7 +80,7 @@ const About = () => {
             <div className='border-none lg:w-[80%]'>
             <div className='text-2xl font-medium py-1 text-center'>Front-end</div>
 
-            <div id="front-end" className='flex items-center justify-center rounded-md gap-2 flex-wrap border border-white/10  p-1 '>
+            <div id="front-end" className='flex items-center justify-center rounded-md gap-2 flex-wrap bg-white/1 border border-white/10  p-1 '>
                 
                 {[...Array(20)].map((_, index) =>(
                   <div key={index} 
@@ -104,7 +104,7 @@ const About = () => {
             <div className='mt-[5%] md:mt-[5%] border-none lg:w-[70%]'>
             <div className='text-2xl font-medium py-1 text-center'>Back-end</div>
 
-            <div id="backend" className='flex items-center justify-center rounded-md gap-2 flex-wrap border border-white/10 p-2 '>
+            <div id="backend" className='flex items-center justify-center rounded-md gap-2 flex-wrap bg-white/1 border border-white/10 p-2 '>
             {[...Array(16)].map((_, indx) => (
               <div key={indx} 
               //onMouseOver={()=>setHoveredIndex(indx)}

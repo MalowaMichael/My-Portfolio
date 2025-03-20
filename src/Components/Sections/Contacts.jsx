@@ -30,7 +30,7 @@ const Contacts = () => {
         <p className='text-center bg-gradient-from-tl bg-gradient-to-br from-[#1dff42] to-cyan-700 bg-clip-text text-transparent'>I understand your purpose for visiting my portfolio. Let's get in touch.<br/>
         Together,  we build something bigger.</p>
 
-      <div id="contacts-container" className='sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[50%] 2xl:w-[60%] border border-white/10 m-auto mt-[10%] md:mt-[2%] bg-transparent border border-white/10 rounded-md  '>
+      <div id="contacts-container" className='sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[50%] 2xl:w-[60%] bg-white/1 border border-white/10 m-auto mt-[10%] md:mt-[2%] bg-transparent border border-white/10 rounded-md  '>
         
         <div id='quick-contacts' className='block border-none'>
            <p className='text-[cyan] text-center font-medium text-[18px] '>Quick Connections</p>

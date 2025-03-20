@@ -47,7 +47,7 @@ const Works = () => {
                 const projectName = projNames.find((name) => name.id === image.indx)
 
                 return (
-                    <div key={index} className='border border-white/10 w-[45%] h-[30%] sm:w-[40%] md:w-[30%] lg:w-[20%] lg:mt-[0] lg:ml-[0]  m-auto rounded-sm sm:rounded-xs mb-4 cursor-pointer hover:shadow-md hover:shadow-[#4ef0ff] hover:transition-all hover:ease-in-out hover:duration[0.7s]'>
+                    <div key={index} className='border border-white/10 w-[45%] h-[30%] sm:w-[40%] md:w-[30%] md:h-[auto] lg:w-[20%] lg:mt-[0] lg:ml-[0]  m-auto rounded-sm sm:rounded-xs mb-4 cursor-pointer hover:shadow-md hover:shadow-[#4ef0ff] hover:transition-all hover:ease-in-out hover:duration[0.7s]'>
                       <a href={image.link} target='_blank' rel='noopener noreferrer'>
 
                           <img src = {image.theImg} alt = {`Image-${image.indx}`} 
@@ -55,7 +55,7 @@ const Works = () => {
                           onClick={() => alert("You are just about to leave this site!")}
                           
                           />
-                          <p onClick={() => alert("You are just about to leave this site!")} className='relative mt-[20%] lg:mt-[30%] lg:font-medium sm:mt-0 w-max-content text-center text-sm font-normal md:font-normal bg-gradient-to-r from-[#1dff42] to-cyan-500 bg-clip-text text-transparent hover:text-[#1dff42] 
+                          <p onClick={() => alert("You are just about to leave this site!")} className='relative mt-[20%] md:pb-2 lg:mt-[30%] lg:font-medium sm:mt-0 w-max-content text-center text-sm font-normal md:font-normal bg-gradient-to-r from-[#1dff42] to-cyan-500 bg-clip-text text-transparent hover:text-[#1dff42] 
                           hover:transition-all hover:duration-[1s] hover:ease-in-out'>{projectName.name}</p>
                     </a>
 

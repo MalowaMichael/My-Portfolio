@@ -7,6 +7,7 @@ import About from './Components/Sections/About'
 import Works from './Components/Sections/Works'
 import Contacts from './Components/Sections/Contacts'
 import {motion, useScroll, useTransform } from 'framer-motion'
+import NotFound from './Components/NotFound'
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
       style={{
         scaleX : scrollYProgress,
         position : "fixed",
-        top:20,
+        top:30,
         left:0,
         right:0,
         height:"50px",
@@ -39,6 +40,8 @@ function App() {
       <div id="about"><About /></div>
       <div id="works"><Works /></div>
       <div id="contacts"><Contacts/></div>
+      <div id ="*"><NotFound/></div>
+      
     </>
   )
 }
