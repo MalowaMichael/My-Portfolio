@@ -1,9 +1,9 @@
 ## My Portfolio
 
-Welcome to my portfolio! I'm Malowa, a passionate Software Engineering student who loves building interactive and responsive web applications. In this portfolio, I realize the thoughts implementation into reality as shown in the beauty about me in my portfolio.
+Welcome to my portfolio! I'm Malowa, a passionate Software Engineering student who loves building interactive and responsive web applications. In this portfolio, I realize the implementation of the thoughts into reality as shown in the beauty about me in my portfolio.
 
 ### Live Preview
-[View my portfolio](https://malowamichael.github.io/My-Portfolio/)
+[View my portfolio](https://my-portfolio-nuwf071tq-pmalowas-projects.vercel.app/)
 
 ## Tech Stack
 - **React**- Frontend framework; efficient project maintenance
