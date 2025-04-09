@@ -12,7 +12,7 @@ import jsprojectImg from '../../assets/javascript_project.jpg'
 const projImages = [
   {indx: 0, theImg: pwayImg, link: "https://malowamichael.github.io/P-Way-Express/"},
   {indx: 1, theImg: productImg, link: "https://malowamichael.github.io/Dynamic-Product-Routing-with-React/"},
-  {indx: 2, theImg: sharingImg},
+  {indx: 2, theImg: sharingImg, link: "https://stock-market-app-lake.vercel.app/"},
   {indx: 3, theImg: resumeImg},
   {indx: 4, theImg: jsprojectImg},
 
@@ -21,7 +21,7 @@ const projImages = [
 const projNames = [
   {id:0, name:"P`Way E-commerce"},
   {id:1, name:"Product Routing"  },
-  {id:2, name:"Image Sharing App"  },
+  {id:2, name:"Stock Market App"  },
   {id:3, name:"React Resume Builder"  },
   {id:4, name:"JavaScript Projects"}
 ]

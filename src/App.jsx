@@ -8,6 +8,7 @@ import Works from './Components/Sections/Works'
 import Contacts from './Components/Sections/Contacts'
 import {motion, useScroll, useTransform } from 'framer-motion'
 import NotFound from './Components/NotFound'
+import { AppTheme } from './AppTheme'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
     <Navbar />
+    <AppTheme/>
     <motion.div
       id="scroll-indicator"
       style={{
